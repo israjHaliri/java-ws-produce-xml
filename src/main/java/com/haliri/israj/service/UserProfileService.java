@@ -3,9 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.belajar.service;
+package com.haliri.israj.service;
 
-import com.belajar.domain.UserProfile;
+import com.haliri.israj.domain.UserProfile;
+
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebService;

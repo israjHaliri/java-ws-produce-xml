@@ -3,17 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.belajar.service;
+package com.haliri.israj.service;
 
-import com.belajar.domain.UserProfile;
-import javax.jws.WebParam;
+import com.haliri.israj.domain.UserProfile;
+
 import javax.jws.WebService;
 
 /**
- *
  * @author israjhaliri
  */
-@WebService(endpointInterface = "com.belajar.service.UserProfileService")
+@WebService(endpointInterface = "com.haliri.israj.service.UserProfileService")
 public class UserProfileServiceImpl implements UserProfileService {
 
     @Override
@@ -29,12 +28,14 @@ public class UserProfileServiceImpl implements UserProfileService {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
         return userProfile;
     }
 
     @Override
     public UserProfile getUserProfileById(String id) {
         UserProfile userProfile = new UserProfile();
+
         try {
             userProfile.setId(id);
             userProfile.setUsername("israj haliri");
@@ -43,17 +44,14 @@ public class UserProfileServiceImpl implements UserProfileService {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
         return userProfile;
     }
 
     @Override
-    public UserProfile setUserProfile(
-            String id,
-            String username,
-            String email,
-            String address) {
-
+    public UserProfile setUserProfile(String id, String username, String email, String address) {
         UserProfile userProfile = new UserProfile();
+
         try {
             userProfile.setId(id);
             userProfile.setUsername(username);
@@ -62,7 +60,9 @@ public class UserProfileServiceImpl implements UserProfileService {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
         return userProfile;
     }
+
 
 }

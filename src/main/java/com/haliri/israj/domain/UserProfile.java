@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.belajar.domain;
+package com.haliri.israj.domain;
 
 /**
- *
  * @author israjhaliri
  */
 public class UserProfile {
+
     private String id;
     private String username;
     private String address;
@@ -22,7 +22,7 @@ public class UserProfile {
     public void setId(String id) {
         this.id = id;
     }
-    
+
     public String getUsername() {
         return username;
     }
@@ -46,6 +46,4 @@ public class UserProfile {
     public void setEmail(String email) {
         this.email = email;
     }
-    
-    
 }
